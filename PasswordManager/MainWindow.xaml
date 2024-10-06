@@ -13,8 +13,8 @@
         <TextBox x:Name="generatedText" HorizontalAlignment="Left" Margin="613,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
         <Button x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left" Margin="623,138,0,0" VerticalAlignment="Top" Width="120" Click="SaveBtn_Click"/>
         <Slider x:Name="generateSlider" HorizontalAlignment="Left" Margin="613,294,0,0" VerticalAlignment="Top" Width="140" Maximum="24" Minimum="8" TickPlacement="BottomRight"/>
-        <Button x:Name="loadBtn" Content="Button" HorizontalAlignment="Left" Margin="86,322,0,0" VerticalAlignment="Top" Width="84" Click="loadBtn_Click"/>
-        <ListView x:Name="passwordsList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="17,19,560,155">
+        <Button x:Name="loadBtn" Content="Load" HorizontalAlignment="Left" Margin="86,322,0,0" VerticalAlignment="Top" Width="84" Click="loadBtn_Click"/>
+        <ListView x:Name="passwordsList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="16,46,560,128">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" Width="100"/>
