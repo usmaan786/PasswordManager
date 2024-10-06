@@ -1,5 +1,7 @@
-![Preview of Current App](AN17QCk.png)
 **C# Password Manager**
+
+![Preview of Current App](AN17QCk.png)
+
 
 This app was created to practice writing C# WPF applications and learn cryptography.
 
