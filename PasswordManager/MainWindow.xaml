@@ -1,0 +1,27 @@
+﻿<Window x:Class="PasswordManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordManager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="usernameTxt" HorizontalAlignment="Left" Margin="623,70,0,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="passwordTxt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="623,108,0,0" Width="120"/>
+        <Button x:Name="generateBtn" Content="Generate Password" HorizontalAlignment="Left" Margin="613,322,0,0" VerticalAlignment="Top" Width="140" Click="generateBtn_Click"/>
+        <TextBox x:Name="generatedText" HorizontalAlignment="Left" Margin="613,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left" Margin="623,138,0,0" VerticalAlignment="Top" Width="120" Click="SaveBtn_Click"/>
+        <Slider x:Name="generateSlider" HorizontalAlignment="Left" Margin="613,294,0,0" VerticalAlignment="Top" Width="140" Maximum="24" Minimum="8" TickPlacement="BottomRight"/>
+        <Button x:Name="loadBtn" Content="Button" HorizontalAlignment="Left" Margin="86,322,0,0" VerticalAlignment="Top" Width="84" Click="loadBtn_Click"/>
+        <ListView x:Name="passwordsList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="17,19,560,155">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" Width="100"/>
+                    <GridViewColumn Header="Password" DisplayMemberBinding="{Binding DecryptedPassword}" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>
