@@ -1,1 +1,1 @@
-[Preview of Current App](AN17QCk.png)
+![Preview of Current App](AN17QCk.png)
